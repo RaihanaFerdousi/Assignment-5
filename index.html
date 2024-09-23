@@ -8,18 +8,25 @@
 </head>
 <body class="bg-[#F9F7F3]">
     <header>
-        <nav class="lg:px-20 py-8 pb-20 flex flex-col lg:flex-row lg:justify-between items-center">
-            <button class="bg-[#B4F461] font-bold px-10 py-3 rounded mb-4 lg:mb-0">Blog</button>
-            <h2 class="flex items-center gap-4 text-xl font-bold"><img src="assets/logo.png" alt="Logo" class="h-10"> Donate Bangladesh</h2>
-            <h2 class="flex items-center text-xl font-bold gap-2"><img src="assets/coin.png" alt="Coin" class="h-6"><span id="total-donations">5500 BDT</span></h2>
+        <nav class="lg:px-20 py-8 flex flex-col lg:flex-row lg:justify-between items-center">
+            <button class="bg-[#B4F461] font-bold px-10 py-3 rounded mb-4 lg:mb-0">
+                <a href="blog.html">Blog</a>
+            </button>
+            <h2 class="flex items-center gap-4 text-xl font-bold">
+                <img src="assets/logo.png" alt="Logo" class="h-10"> Donate Bangladesh
+            </h2>
+            <h2 class="flex items-center text-xl font-bold gap-2">
+                <img src="assets/coin.png" alt="Coin" class="h-6">
+                <span id="total-donations">5500 BDT</span>
+            </h2>
         </nav>
     </header>
-    <main class="bg-white py-20 mx-4 sm:mx-10 lg:mx-20">
+    <main class="bg-white py-10 mx-4 sm:mx-10 lg:mx-20 rounded-2xl">
         <div class="flex flex-col lg:flex-row gap-5 justify-center mb-10">
             <button id="donationBtn" class="bg-[#B4F461] font-bold px-10 py-3 rounded w-full lg:w-auto">Donation</button>
             <button id="historyBtn" class="bg-[#B4F461] font-bold px-10 py-3 rounded w-full lg:w-auto">History</button>
         </div>
-        <section id="donationSection">
+        <section id="donationSection" class="p-14">
             <div>
                 <!-- card one -->
                 <div class="flex flex-col lg:flex-row gap-10">
@@ -62,7 +69,7 @@
                 </div>
             </div>
         </section>
-        <section id="historySection" style="display:none;">
+        <section id="historySection" class="p-10" style="display:none;">
             <div id="floodDonation"></div>
             <div id="floodReliefDonation"></div>
             <div id="aidInjuredDonation"></div>
