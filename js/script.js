@@ -31,7 +31,7 @@ historyBtn.addEventListener('click', function(){
 
 
 
-// Function to handle the donation process
+
 function handleDonation(donationIndex) {
     const donatedMoneyText = document.getElementsByClassName('money-donated')[donationIndex].textContent.replace(' BDT', '');
     const donatedMoney = parseFloat(donatedMoneyText);
@@ -54,8 +54,7 @@ function handleDonation(donationIndex) {
 
         document.getElementById('total-donations').textContent = newTotalMoney + ' BDT';
 
-         // Add alert for successful donation
-         alert(`Thank you for your donation of ${amountDonated} BDT!`);
+        alert(`Thank you for your donation of ${amountDonated} BDT!`);
 
         amountInput.value = '';
     }
