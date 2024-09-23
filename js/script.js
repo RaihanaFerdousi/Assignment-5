@@ -54,6 +54,9 @@ function handleDonation(donationIndex) {
 
         document.getElementById('total-donations').textContent = newTotalMoney + ' BDT';
 
+         // Add alert for successful donation
+         alert(`Thank you for your donation of ${amountDonated} BDT!`);
+
         amountInput.value = '';
     }
 }
